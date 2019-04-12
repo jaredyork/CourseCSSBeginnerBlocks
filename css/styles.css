@@ -1,0 +1,145 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e9e9e9;
+}
+
+.wrap {
+  background: white;
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-main {
+  background: #fafafa;
+margin: 0;
+padding: 0;
+}
+
+.nav-main li {
+  display: inline;
+}
+
+.nav-main a {
+  display: inline-block;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+}
+
+.site-header-wrapper {
+  display: flex;
+  justify-content: center;
+align-items: center;
+color: white;
+min-height: calc(100vh - 32px);
+background-image: url(../images/jarrod-winkler-1348990-unsplash.jpg);
+background-size: cover;
+text-align: center;
+}
+
+.site-header-text h2 {
+  font-size: 3em;
+}
+
+.site-header-text h3 {
+  font-size: 2em;
+}
+
+article {
+  padding: 32px;
+  line-height: 1.5em;
+}
+
+article img {
+  max-width: 100%;
+}
+
+figure.float-left {
+  float: left;
+}
+
+figure.float-right {
+  float: right;
+}
+
+.site-footer {
+  color: #c1c1c1;
+  background: #333;
+}
+
+.wrap-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 32px;
+}
+
+.site-footer-links {
+  width: 25%;
+  line-height: 3em;
+}
+
+.site-footer-links a {
+  color: #85dcff;
+  text-decoration: none;
+}
+
+.site-footer-events {
+  width: 75%;
+}
+
+.copyright {
+  margin: 0;
+padding: 0.5me;
+font-size: 0.85em;
+text-align: center;
+}
+
+.img-small {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  border: 1px solid #b1b1b1;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    width: 100%;
+  }
+  
+  .nav-main li {
+    display: block;
+  }
+
+  article {
+    padding: 16px;
+  }
+
+  .site-header-wrapper {
+    min-height: calc(100vh - 188px);
+  }
+
+  .wrap-footer {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .site-footer-events {
+    width: 100%;
+  }
+}
